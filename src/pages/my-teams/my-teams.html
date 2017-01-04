@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button menuToggle left ion-button>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Elite Schedule</ion-title>
+    </ion-navbar>
+    <ion-toolbar color="secondary">
+        <ion-title>MyTeams</ion-title>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+    <!--<p>You are not followingg</p>-->
+    <!--<p>First select a tournaments</p>-->
+    <ion-list>
+        <button ion-item *ngFor="let item of favorites">
+                <ion-icon name="star"></ion-icon>
+                {{item.team.name}}
+        </button>
+    </ion-list>
+    <button ion-button (click)="goToTournaments()">Fin a Tournaments</button>
+
+</ion-content>

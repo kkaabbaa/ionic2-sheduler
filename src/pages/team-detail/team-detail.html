@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item *ngFor="let game of games" (click)="gameClicked($event, game)">
+        {{game.opponent}}
+        <!--<ion-row>-->
+        <!--    <ion-col width-20>-->
+        <!--        <p>{{game.time | date:'M/d/yy'}}</p>-->
+        <!--        <p>{{game.time | date:'shortTime'}}</p>-->
+        <!--    </ion-col>-->
+        <!--    <ion-col width-60>-->
+        <!--        <p>{{game.homeAway}} {{game.opponent}}</p>-->
+        <!--        <p>{{game.location}}</p>-->
+        <!--    </ion-col>-->
+        <!--    <ion-col width-20>-->
+        <!--        <h4>{{game.scoreDisplay}}</h4>-->
+        <!--        <ion-badge [class]="getScoreDisplayBadgeClass(game)">{{getScoreWorL(game)}}</ion-badge>-->
+        <!--    </ion-col>-->
+        <!--</ion-row>-->
+    </ion-item>
+</ion-content>
